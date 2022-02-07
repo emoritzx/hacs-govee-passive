@@ -1,0 +1,16 @@
+{
+  "domain": "govee_passive",
+  "name": "Govee Passive Integration",
+  "documentation": "https://github.com/emoritzx/hacs-govee-passive",
+  "iot_class": "cloud_polling",
+  "issue_tracker": "https://github.com/emoritzx/hacs-govee-passive/issues",
+  "version": "0.0.1",
+  "config_flow": true,
+  "codeowners": [
+    "@emoritzx"
+  ],
+  "requirements": [
+    "pyjwt",
+    "pytz"
+  ]
+}

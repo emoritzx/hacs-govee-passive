@@ -1,10 +1,11 @@
 {
-    "name": "Integration blueprint",
-    "hacs": "1.6.0",
+    "name": "Govee Passive",
+    "hacs": "1.22.0",
     "domains": [
         "binary_sensor",
-        "sensor",
-        "switch"
+        "sensor"
     ],
-    "homeassistant": "0.118.0"
+    "iot_class": "Cloud Polling",
+    "homeassistant": "2022.2.0",
+    "render_readme": true
 }

@@ -2,8 +2,8 @@
     "config": {
         "step": {
             "user": {
-                "title": "Blueprint",
-                "description": "If you need help with the configuration have a look here: https://github.com/custom-components/integration_blueprint",
+                "title": "Govee Passive",
+                "description": "If you need help with the configuration have a look here: https://github.com/emoritzx/hacs-govee-passive",
                 "data": {
                     "username": "Username",
                     "password": "Password"
@@ -22,8 +22,7 @@
             "user": {
                 "data": {
                     "binary_sensor": "Binary sensor enabled",
-                    "sensor": "Sensor enabled",
-                    "switch": "Switch enabled"
+                    "sensor": "Sensor enabled"
                 }
             }
         }

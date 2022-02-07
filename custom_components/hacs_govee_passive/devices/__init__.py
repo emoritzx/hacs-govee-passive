@@ -1,0 +1,3 @@
+from . import H5041, H5053
+
+DEVICES = [H5041, H5053]
