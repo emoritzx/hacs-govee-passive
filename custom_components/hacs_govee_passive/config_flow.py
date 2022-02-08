@@ -1,4 +1,5 @@
 """Adds config flow for Blueprint."""
+import logging
 from homeassistant import config_entries
 from homeassistant.core import callback
 from homeassistant.helpers.aiohttp_client import async_create_clientsession
@@ -76,8 +77,8 @@ class BlueprintFlowHandler(config_entries.ConfigFlow, domain=DOMAIN):
             client = GoveeApiClient(username, password, session)
             await client.async_get_data()
             return True
-        except Exception:  # pylint: disable=broad-except
-            pass
+        except Exception as e:  # pylint: disable=broad-except
+            logging.error("Error logging in: " + e)
         return False
 
 
