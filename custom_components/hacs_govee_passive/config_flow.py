@@ -5,7 +5,8 @@ from homeassistant.core import callback
 from homeassistant.helpers.aiohttp_client import async_create_clientsession
 import voluptuous as vol
 
-from .api import MockGoveeApiClient as GoveeApiClient
+# from .api import MockGoveeApiClient as GoveeApiClient
+from .api import GoveeApiClient
 from .const import (
     CONF_PASSWORD,
     CONF_USERNAME,
@@ -78,7 +79,7 @@ class BlueprintFlowHandler(config_entries.ConfigFlow, domain=DOMAIN):
             await client.async_get_data()
             return True
         except Exception as e:  # pylint: disable=broad-except
-            logging.error("Error logging in: " + e)
+            logging.error("Error logging in: " + str(e))
         return False
 
 
